@@ -1,0 +1,4 @@
+node_modules/
+/server/config/config.json
+/server/config/config_mlab.json
+/server/config/config_rohit.json

@@ -1,0 +1,131 @@
+<div class="page-header header-filter" data-parallax="true" style=" background-image: url('/img/home/landing.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="title">There is No Friend as Loyal as a Book!</h1>
+        <h4>Look up at the stars and not down at your feet. Try to make sense of what you see, and wonder about what makes the universe exist. Be curious.</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main main-raised" style="z-index: 100;">
+  <div class="container">
+    <div class="section text-center" id="features">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+          <h2 class="title">About Us !</h2>
+          <h5 class="description">We at Books4You provides the online service to check the availability of books and order them. We have collaborated with multiple physical Book Stores.<br> We also provide all kind of pick and delivery services within the city. </h5>
+        </div>
+      </div>
+      <div class="features">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="info">
+              <div class="icon icon-warning">
+                <i class="material-icons">monetization_on</i>
+              </div>
+              <h4 class="info-title">Save TIME, Save MONEY :p</h4>
+              <p>Books4You significantly eases the search process for you. Just start your searches from here and then head on to the bookstore which you find inexpensive and best and continue with your book purchase. No more opening multiple windows and searching on each store.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info">
+              <div class="icon icon-success">
+                <i class="material-icons">verified_user</i>
+              </div>
+              <h4 class="info-title">Verified Bookstores :)</h4>
+              <p>All the Bookstores and users at Books4You are verified so you don't need to be on your toes. We gurantee protection of your privacy through encryption, so just sitback and do what you are here for instead of worrying about security.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info">
+              <div class="icon icon-danger">
+                <i class="material-icons">payment</i>
+              </div>
+              <h4 class="info-title">Instant Payments : o</h4>
+              <p>As a Bookshop Owner you don't need to worry about your payment. We assure your earnings are safe with us. And you can withdraw then whenever you want.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{!-- <div class="section text-center" id="team">
+      <h2 class="title">Here is our team</h2>
+      <div class="team">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="team-player">
+              <div class="card card-plain">
+                <div class="col-md-6 ml-auto mr-auto">
+                  <img src="/img/home/nikhil.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+                </div>
+                <h4 class="card-title">Nikhil Gupta<br><small class="card-description text-muted">Developer</small></h4>
+                <div class="card-body">
+                  <p class="card-description">Awesome and hardworking guy from beta batch, VMC.</p>
+                </div>
+                <div class="card-footer justify-content-center">
+                  <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                  <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="team-player">
+              <div class="card card-plain">
+                <div class="col-md-6 ml-auto mr-auto">
+                  <img src="/img/home/rohit.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+                </div>
+                <h4 class="card-title">Rohit Bokade<br><small class="card-description text-muted">Developer</small></h4>
+                <div class="card-body">
+                  <p class="card-description">Lazy guy who loves cricket above anything.</p>
+                </div>
+                <div class="card-footer justify-content-center">
+                  <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                  <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> --}}
+    <div class="section section-contacts" id="contact">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+          {{> _messages}}
+          <h2 class="text-center title">Contact</h2>
+          <h4 class="text-center description">Have some queries? Drop them here. We are eagerly listening to you!</h4>
+          <form class="contact-form" method="post" action="/contact">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Your Name</label>
+                  <input type="text" class="form-control" name="name" value="{{newMessage.name}}">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Your Email</label>
+                  <input type="text" class="form-control" name="email" value="{{newMessage.email}}">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message" class="bmd-label-floating">Your Message</label>
+              <textarea class="form-control" rows="4" name="message">{{newMessage.message}}</textarea>
+            </div>
+            <div class="row">
+              <div class="col-md-4 ml-auto mr-auto text-center">
+                <button class="btn btn-primary btn-raised" type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="particles-container" id="particles-js">
+</div>
